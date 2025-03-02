@@ -31,7 +31,8 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
           return SliverFillRemaining(child: Text('Failed to loading Data'));
         } else {
           return SliverFillRemaining(
-            child: Center(child: CircularProgressIndicator()),
+            child: SingleChildScrollView(
+                child: Center(child: CircularProgressIndicator())),
           );
         }
       },
